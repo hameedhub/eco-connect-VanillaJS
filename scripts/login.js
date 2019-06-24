@@ -30,7 +30,8 @@ const login = (user) => {
       sessionStorage.setItem('phone', res.data.phone);
       sessionStorage.setItem('email', res.data.email);
       sessionStorage.setItem('usertype', res.data.usertype);
-      sessionStorage.setItem('gender', res.data.city);
+      sessionStorage.setItem('gender', res.data.gender);
+      sessionStorage.setItem('city', res.data.city);
       sessionStorage.setItem('state', res.data.state);
       const usertype = sessionStorage.getItem('usertype');
       if (usertype === 'client') {
